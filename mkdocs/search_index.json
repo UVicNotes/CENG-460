@@ -2,13 +2,53 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CENG 460\n\n\n\n\nInstructor\n: Lin Cai\n\n\nWebsite\n: \nhttp://www.ece.uvic.ca/~cai/ceng460\n\n\nUser\n: \nceng460\n\n\nPass\n: \n460notes\n\n\n\n\n\n\n\n\nLabs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
+            "text": "CENG 460\n\n\n\n\n\n\nInstructor\n: Lin Cai\n\n\nOffice\n: EOW 317\n\n\nEmail\n: \ncai@uvic.ca\n\n\nWebsite\n: \nhttp://www.ece.uvic.ca/~cai/ceng460\n\n\nUser\n: \nceng460\n\n\nPass\n: \n460notes\n\n\n\n\n\n\n\n\nOverview\n\n\nThis course will introduce the fundamental concepts in computer communications networks, to help students understand the principles and practice of designing, building, and operating computer networks, particularly the Internet.\n\n\nPrerequisites\n\n\nCSC 230 or equivalent\n\n\nTextbook\n\n\nComputer Networks, Fifth Edition, Andrew S. Tanenbaum and David J. Wetherall, Prentice Hall, 2010, ISBN: 0-13-212695-8 \n\n\nReference\n\n\nComputer Networking: A Top-Down Approach, Fifth Edition, James F. Kurose and Keith W. Ross, Addison Wesley, 2009, ISBN-10: 0136079679\n\n\nOffice Hours\n\n\nMR 13:00-14:30, or by appointment.\n\n\nLectures\n\n\nMR 11:30-12:50 COR B108 --- \nLecture Schedule\n\n\nLabs\n\n\nLabs will be using Wireshark. This course will discuss Networks and Network Protocols.\n\n\nAssessment\n\n\n\n\n\n\n\n\nTask\n\n\nWeight\n\n\n\n\n\n\n\n\n\n\nAssignments\n\n\n10%\n\n\n\n\n\n\nLab\n\n\n20%\n\n\n\n\n\n\nMidterm\n\n\n30%\n\n\n\n\n\n\nFinal\n\n\n40%", 
             "title": "Home"
         }, 
         {
             "location": "/#ceng-460", 
-            "text": "Instructor : Lin Cai  Website :  http://www.ece.uvic.ca/~cai/ceng460  User :  ceng460  Pass :  460notes     Labs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
+            "text": "Instructor : Lin Cai  Office : EOW 317  Email :  cai@uvic.ca  Website :  http://www.ece.uvic.ca/~cai/ceng460  User :  ceng460  Pass :  460notes", 
             "title": "CENG 460"
+        }, 
+        {
+            "location": "/#overview", 
+            "text": "This course will introduce the fundamental concepts in computer communications networks, to help students understand the principles and practice of designing, building, and operating computer networks, particularly the Internet.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/#prerequisites", 
+            "text": "CSC 230 or equivalent", 
+            "title": "Prerequisites"
+        }, 
+        {
+            "location": "/#textbook", 
+            "text": "Computer Networks, Fifth Edition, Andrew S. Tanenbaum and David J. Wetherall, Prentice Hall, 2010, ISBN: 0-13-212695-8", 
+            "title": "Textbook"
+        }, 
+        {
+            "location": "/#reference", 
+            "text": "Computer Networking: A Top-Down Approach, Fifth Edition, James F. Kurose and Keith W. Ross, Addison Wesley, 2009, ISBN-10: 0136079679", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/#office-hours", 
+            "text": "MR 13:00-14:30, or by appointment.", 
+            "title": "Office Hours"
+        }, 
+        {
+            "location": "/#lectures", 
+            "text": "MR 11:30-12:50 COR B108 ---  Lecture Schedule", 
+            "title": "Lectures"
+        }, 
+        {
+            "location": "/#labs", 
+            "text": "Labs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
+            "title": "Labs"
+        }, 
+        {
+            "location": "/#assessment", 
+            "text": "Task  Weight      Assignments  10%    Lab  20%    Midterm  30%    Final  40%", 
+            "title": "Assessment"
         }, 
         {
             "location": "/Notes--2016-01-04/", 
