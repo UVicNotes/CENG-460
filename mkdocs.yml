@@ -1,5 +1,5 @@
 site_name: CENG 460
-docs_dir: notes
+docs_dir: Lectures
 site_url: http://uvicnotes.github.io/CENG-460/
 repo_url: https://github.com/UVicNotes/CENG-460
 site_description: Course Notes for CENG 460 - Communication Networks
