@@ -2,7 +2,7 @@
 set -e # exit with nonzero exit code if anything fails
 
 # clone the old gh pages
-git clone git@github.com:UVicNotes/CENG-460.git site/
+git clone "https://${GH_TOKEN}@${GH_REF}" site/
 cd site/
 git checkout gh-pages
 cd ../
