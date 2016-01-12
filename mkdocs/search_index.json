@@ -2,23 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Lecture 1 - Notes\n\n\nJanuary 4, 2016\n\n\nCENG 460\n\n\n\n\nInstructor\n: Lin Cai\n\n\nWebsite\n: \nhttp://www.ece.uvic.ca/~cai/ceng460\n\n\nUser\n: \nceng460\n\n\nPass\n: \n460notes\n\n\n\n\n\n\n\n\nLabs will be using Wireshark. This course will discuss Networks and Network Protocols.\n\n\nIntroduction\n\n\nThe internet is --- arguably -- the largest human contract spanning the globe.", 
+            "text": "CENG 460\n\n\n\n\nInstructor\n: Lin Cai\n\n\nWebsite\n: \nhttp://www.ece.uvic.ca/~cai/ceng460\n\n\nUser\n: \nceng460\n\n\nPass\n: \n460notes\n\n\n\n\n\n\n\n\nLabs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
             "title": "Home"
-        }, 
-        {
-            "location": "/#lecture-1-notes", 
-            "text": "January 4, 2016", 
-            "title": "Lecture 1 - Notes"
         }, 
         {
             "location": "/#ceng-460", 
             "text": "Instructor : Lin Cai  Website :  http://www.ece.uvic.ca/~cai/ceng460  User :  ceng460  Pass :  460notes     Labs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
             "title": "CENG 460"
-        }, 
-        {
-            "location": "/#introduction", 
-            "text": "The internet is --- arguably -- the largest human contract spanning the globe.", 
-            "title": "Introduction"
         }, 
         {
             "location": "/Notes--2016-01-04/", 
