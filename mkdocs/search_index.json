@@ -1,12 +1,12 @@
 {
     "docs": [
         {
-            "location": "/README/", 
+            "location": "/", 
             "text": "CENG 460\n\n\n\n\nInstructor\n: Lin Cai\n\n\nWebsite\n: \nhttp://www.ece.uvic.ca/~cai/ceng460\n\n\nUser\n: \nceng460\n\n\nPass\n: \n460notes\n\n\n\n\n\n\n\n\nLabs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
             "title": "Home"
         }, 
         {
-            "location": "/README/#ceng-460", 
+            "location": "/#ceng-460", 
             "text": "Instructor : Lin Cai  Website :  http://www.ece.uvic.ca/~cai/ceng460  User :  ceng460  Pass :  460notes     Labs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
             "title": "CENG 460"
         }
