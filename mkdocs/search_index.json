@@ -9,6 +9,61 @@
             "location": "/#ceng-460", 
             "text": "Instructor : Lin Cai  Website :  http://www.ece.uvic.ca/~cai/ceng460  User :  ceng460  Pass :  460notes     Labs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
             "title": "CENG 460"
+        }, 
+        {
+            "location": "/Notes--2016-01-04/", 
+            "text": "Lecture 1 - Notes\n\n\nJanuary 4, 2016\n\n\nCENG 460\n\n\n\n\nInstructor\n: Lin Cai\n\n\nWebsite\n: \nhttp://www.ece.uvic.ca/~cai/ceng460\n\n\nUser\n: \nceng460\n\n\nPass\n: \n460notes\n\n\n\n\n\n\n\n\nLabs will be using Wireshark. This course will discuss Networks and Network Protocols.\n\n\nIntroduction\n\n\nThe internet is --- arguably -- the largest human contract spanning the globe.", 
+            "title": "Notes  2016 01 04"
+        }, 
+        {
+            "location": "/Notes--2016-01-04/#lecture-1-notes", 
+            "text": "January 4, 2016", 
+            "title": "Lecture 1 - Notes"
+        }, 
+        {
+            "location": "/Notes--2016-01-04/#ceng-460", 
+            "text": "Instructor : Lin Cai  Website :  http://www.ece.uvic.ca/~cai/ceng460  User :  ceng460  Pass :  460notes     Labs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
+            "title": "CENG 460"
+        }, 
+        {
+            "location": "/Notes--2016-01-04/#introduction", 
+            "text": "The internet is --- arguably -- the largest human contract spanning the globe.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Notes--2016-01-07/", 
+            "text": "Lecture 2 - Notes\n\n\nJanuary 7, 2016\n\n\nOverview of Networks\n\n\nWhat is a network?\n\n\n\n\nEnd Systems, e.g., computers, phones, servers. \n\n\nCommunication Links, e.g., cell broadcasts, broadband\n\n\nIntermediate Systems, e.g., routers, switches\n\n\n\n\nTypes of Networks\n\n\n\n\nBroadcast\n\n\nCable TV\n\n\n\n\n\n\nSwitched\n\n\nCircuit Switching\n\n\nPublic Switched Telephone Network (PSTN)\n\n\n\n\n\n\nPacket Switching\n\n\nThe Internet\n\n\n\n\n\n\n\n\n\n\n\n\nPacket Switching\n\n\nPackets must arrive to the router before it is forwarded to its next destination. This is called \nstore and forward\n.\n\n\nExample\n\n\nYou have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.\n\n\n$$\n    \\underset{\\text{routers}}3 \\cdot \n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}\n$$\n\n\nSo the total transmission time is 15 seconds. The end to end can also be shown as,\n\n\n$$\n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}\n$$\n\n\nthe queue delay is the least stable and is based on the packets in the queue.", 
+            "title": "Notes  2016 01 07"
+        }, 
+        {
+            "location": "/Notes--2016-01-07/#lecture-2-notes", 
+            "text": "January 7, 2016", 
+            "title": "Lecture 2 - Notes"
+        }, 
+        {
+            "location": "/Notes--2016-01-07/#overview-of-networks", 
+            "text": "What is a network?   End Systems, e.g., computers, phones, servers.   Communication Links, e.g., cell broadcasts, broadband  Intermediate Systems, e.g., routers, switches   Types of Networks   Broadcast  Cable TV    Switched  Circuit Switching  Public Switched Telephone Network (PSTN)    Packet Switching  The Internet       Packet Switching  Packets must arrive to the router before it is forwarded to its next destination. This is called  store and forward .  Example  You have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.  $$\n    \\underset{\\text{routers}}3 \\cdot \n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}\n$$  So the total transmission time is 15 seconds. The end to end can also be shown as,  $$\n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}\n$$  the queue delay is the least stable and is based on the packets in the queue.", 
+            "title": "Overview of Networks"
+        }, 
+        {
+            "location": "/Notes--2016-01-11/", 
+            "text": "Lecture 3 - Notes\n\n\nJanuary 11, 2016\n\n\nVirtual Circuit Switching\n\n\nWith \nVirtual Circuit Switching\n we reserve resources based on previous traffic patterns.\n\n\nBasically emulates a circuit switched connection using packet. Packets are given resource identifiers that define their destination.\n\n\nInternet History\n\n\nARAPAnet\n was developed by DARPA and the US Department of Defence with the goal of passing packets (using packet switching) on a large distributed network. In addition they wanted the communications network to,\n\n\n\n\nbe \nredundant\n and resilient to attack, i.e., nodes being destroyed\n\n\nsupport \nmultiple types of data\n including multiple communication services\n\n\naccommodate a \nvariety of networks\n and infrastructure\n\n\n\n\nTopologies\n\n\n\n\n\n\n\n\nTopology\n\n\nDelay\n\n\nReliability\n\n\n# of Links\n\n\n\n\n\n\n\n\n\n\nMesh\n\n\nshort\n\n\nhigh\n\n\n$O(n^2)$\n\n\n\n\n\n\nRing\n\n\nlong\n\n\nlow\n\n\n$O(n)$\n\n\n\n\n\n\nStar\n\n\nlong\n\n\nlow\n\n\n$O(n)$\n\n\n\n\n\n\nTree\n\n\n$\\lg(n)$\n\n\ndepends on node\n\n\n$O(n-1)$\n\n\n\n\n\n\n\n\nIn Canada\n\n\n\n\nCA*net: 1990 -- 1997\n\n\nCA*net II: 1995 -- 2000\n\n\nCA*net 3: 1998 -- 2002\n\n\nCA*net 4: 2002 -- Present", 
+            "title": "Notes  2016 01 11"
+        }, 
+        {
+            "location": "/Notes--2016-01-11/#lecture-3-notes", 
+            "text": "January 11, 2016", 
+            "title": "Lecture 3 - Notes"
+        }, 
+        {
+            "location": "/Notes--2016-01-11/#virtual-circuit-switching", 
+            "text": "With  Virtual Circuit Switching  we reserve resources based on previous traffic patterns.  Basically emulates a circuit switched connection using packet. Packets are given resource identifiers that define their destination.", 
+            "title": "Virtual Circuit Switching"
+        }, 
+        {
+            "location": "/Notes--2016-01-11/#internet-history", 
+            "text": "ARAPAnet  was developed by DARPA and the US Department of Defence with the goal of passing packets (using packet switching) on a large distributed network. In addition they wanted the communications network to,   be  redundant  and resilient to attack, i.e., nodes being destroyed  support  multiple types of data  including multiple communication services  accommodate a  variety of networks  and infrastructure   Topologies     Topology  Delay  Reliability  # of Links      Mesh  short  high  $O(n^2)$    Ring  long  low  $O(n)$    Star  long  low  $O(n)$    Tree  $\\lg(n)$  depends on node  $O(n-1)$     In Canada   CA*net: 1990 -- 1997  CA*net II: 1995 -- 2000  CA*net 3: 1998 -- 2002  CA*net 4: 2002 -- Present", 
+            "title": "Internet History"
         }
     ]
 }
