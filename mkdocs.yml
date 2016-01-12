@@ -1,3 +1,7 @@
 site_name: CENG 460
 docs_dir: notes
+site_url: http://uvicnotes.github.io/CENG-460/
+repo_url: https://github.com/UVicNotes/CENG-460
+site_description: Course Notes for CENG 460 - Communication Networks
+site_author: Ben Hawker
 theme: readthedocs
