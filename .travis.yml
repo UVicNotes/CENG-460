@@ -1,0 +1,2 @@
+before_script: pip install mkdocs
+script: mkdocs gh-deploy --clean
