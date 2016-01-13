@@ -4,4 +4,8 @@ site_url: http://uvicnotes.github.io/CENG-460/
 repo_url: https://github.com/UVicNotes/CENG-460
 site_description: Course Notes for CENG 460 - Communication Networks
 site_author: Ben Hawker
+extra_javascript: 
+    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+    - mdx_math
 theme: readthedocs
