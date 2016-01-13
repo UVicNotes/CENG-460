@@ -1,6 +1,6 @@
 # CENG 460
 
-[![Build Status](https://travis-ci.org/UVicNotes/CENG-460.svg?branch=master)](https://travis-ci.org/UVicNotes/CENG-460)
+__Spring 2016__
 
 * __Instructor__: Lin Cai
 * __Office__: EOW 317
