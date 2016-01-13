@@ -23,4 +23,5 @@ git add .
 git commit -m "Travis CI - Deployed ${LAST_COMMIT} with MkDocs"
 
 # push to the repo
+git config push.default simple # hide stupid message
 git push --quiet "https://${GH_TOKEN}@${GH_REF}"
