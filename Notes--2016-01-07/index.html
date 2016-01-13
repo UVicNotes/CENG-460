@@ -27,6 +27,7 @@
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script> 
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 </head>
@@ -153,7 +154,8 @@
 <p>Packets must arrive to the router before it is forwarded to its next destination. This is called <em>store and forward</em>.</p>
 <h4 id="example">Example</h4>
 <p>You have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.</p>
-<p>$$
+<p>
+<script type="math/tex; mode=display">
     \underset{\text{routers}}3 \cdot 
     \frac
     {
@@ -163,11 +165,14 @@
     \frac{1.5 ~\text{Megabits}}{\text{Second}}
     \right)}
      = 15 ~\text{seconds}
-$$</p>
+</script>
+</p>
 <p>So the total transmission time is 15 seconds. The end to end can also be shown as,</p>
-<p>$$
+<p>
+<script type="math/tex; mode=display">
     d_\text{end to end} = d_\text{transmission} + d_\text{propagation} + d_\text{processing} + d_\text{queue}
-$$</p>
+</script>
+</p>
 <p>the queue delay is the least stable and is based on the packets in the queue.</p>
               
             </div>
