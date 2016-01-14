@@ -5,11 +5,9 @@ __Spring 2016__
 * __Instructor__: Lin Cai
 * __Office__: EOW 317
 * __Email__: [cai@uvic.ca](mailto:cai@uvic.ca)
-* __Website__: [http://www.ece.uvic.ca/~cai/ceng460](http://www.ece.uvic.ca/~cai/ceng460)
+* __Website__: [Link](http://www.ece.uvic.ca/~cai/ceng460-outline.html)
     * __User__: `ceng460`
     * __Pass__: `460notes`
-
-
 
 ## Overview
 
