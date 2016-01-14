@@ -104,6 +104,51 @@
             "location": "/2016-01-11/#internet-history", 
             "text": "ARAPAnet  was developed by DARPA and the US Department of Defence with the goal of passing packets (using packet switching) on a large distributed network. In addition they wanted the communications network to,   be  redundant  and resilient to attack, i.e., nodes being destroyed  support  multiple types of data  including multiple communication services  accommodate a  variety of networks  and infrastructure   Topologies     Topology  Delay  Reliability  # of Links      Mesh  short  high  $O(n^2)$    Ring  long  low  $O(n)$    Star  long  low  $O(n)$    Tree  $\\lg(n)$  depends on node  $O(n-1)$     In Canada   CA*net: 1990 -- 1997  CA*net II: 1995 -- 2000  CA*net 3: 1998 -- 2002  CA*net 4: 2002 -- Present", 
             "title": "Internet History"
+        }, 
+        {
+            "location": "/2016-01-14/", 
+            "text": "Lecture 4 - Notes\n\n\nJanuary 14, 2016\n  \n\n\nPhysical Layer Internet Access\n\n\n\n\nAnalogue Communication\n: an analogue signal as a waveform. For example your voice or a record player.\n\n\nDigital Communication\n: a digital signal, serialized into bits. Can be used to simulate analogue but can also be native binary data. For example an MP3 over the internet or a webpage.\n\n\n\n\nA Digital Communication System\n\n\n\n\nAs shown in the image above we send an analogue source to an analogue to digital converter then a Modulator which sends it over our communication channel. We receive it and perform the the decoding steps before it arrives at the destination. Modulator-Demodulators (MODEMs) are used to convert the signal for transfer.\n\n\nModems\n\n\nThe signal starts in the frequency domain and has infinite harmonics. The channel has limited bandwidth[^bandwidth] and can help to compress? the signal.\n\n\n[^bandwidth]: The difference between the highest and lowest frequencies that can be transferred without strong attenuation.\n\n\n\n\n\n\na.\n A binary signal\n\n\nb.\n A binary signal\n\n\nc.\n A binary signal\n\n\nd.\n A binary signal\n\n\n\n\nThe most common form of modulation today is Quadrature Amplitude Modulation (QAM). Below we have a number of constellation diagrams representing different QAMs.\n\n\n\n\n\n\na.\n QPSK\n\n\nb.\n QAM-16\n\n\nc.\n QAM-64\n\n\n\n\nWith 16 bits of modulation (QAM-16) we can send four bits of data. Since,\n\n\n\n\n\n    \\log_2{V}\n\n\n\n\n\nThe example below shows the mapping of bits to symbols in QAM-16.\n\n\n\n\nNyquist Limit\n\n\nIf an arbitrary signal has been run through a low-pass filter of bandwidth $H$, the filtered signal can be completely constructed by making only $2H$ samples per second. So the maximum speed of a noiseless channel is,\n\n\n\n\n\n    2H \\log_2{(V)} ~\\text{bps}\n\n\n\n\n\nwhere $V$ is the number of symbols in the constellation and $H$ is the bandwidth. In summary,\n\n\n\n\nBaud Rate\n: The # of samples per second\n\n\nSymbol Rate\n: Each baud $\\iff$ one symbol\n\n\nData Rate\n: $2H \\log_2{(V)}$ bps\n\n\n\n\nShannon Limit\n\n\nFor any degree of noise contamination ($N$) on a communication channel it is possible to communicate discrete data near error free at a maximum rate of\n\n\n\n\n\n    H \\log_2{\\left( 1 + \\frac{S}{N}\\right)} ~\\text{bps}\n\n\n\n\n\nwhere $\\frac{S}{N}$ is the signal to noise ratio and $H$ is the bandwidth.   \n\n\nInternet access through a Phone\n\n\nThe first access was through analogue dialup. A Modem was used on a telephone line with unshielded twisted pair (UTP). You could receive at up to 56 Kbps down. It had an $8~\\text{KHz}$ band, $8$ symbols per second and 256-QAM (8 bits). \n\n\nAsymmetric DSL (ADSL)\n\n\nADSL was introduced to free up more bandwidth. It provides upstream and downstream at the same time. The DSL modem is then connect to your computer.\n\n\nInternet access though a Cable Line\n\n\nThis uses a a shared coaxial cable, internet access is provided through Hybrid Fibre Coaxial (HFC) Protocol (DOCSIS). They divided the frequency band into sections for different tasks.", 
+            "title": "2016 01 14"
+        }, 
+        {
+            "location": "/2016-01-14/#lecture-4-notes", 
+            "text": "January 14, 2016", 
+            "title": "Lecture 4 - Notes"
+        }, 
+        {
+            "location": "/2016-01-14/#physical-layer-internet-access", 
+            "text": "Analogue Communication : an analogue signal as a waveform. For example your voice or a record player.  Digital Communication : a digital signal, serialized into bits. Can be used to simulate analogue but can also be native binary data. For example an MP3 over the internet or a webpage.", 
+            "title": "Physical Layer Internet Access"
+        }, 
+        {
+            "location": "/2016-01-14/#a-digital-communication-system", 
+            "text": "As shown in the image above we send an analogue source to an analogue to digital converter then a Modulator which sends it over our communication channel. We receive it and perform the the decoding steps before it arrives at the destination. Modulator-Demodulators (MODEMs) are used to convert the signal for transfer.", 
+            "title": "A Digital Communication System"
+        }, 
+        {
+            "location": "/2016-01-14/#modems", 
+            "text": "The signal starts in the frequency domain and has infinite harmonics. The channel has limited bandwidth[^bandwidth] and can help to compress? the signal.  [^bandwidth]: The difference between the highest and lowest frequencies that can be transferred without strong attenuation.    a.  A binary signal  b.  A binary signal  c.  A binary signal  d.  A binary signal   The most common form of modulation today is Quadrature Amplitude Modulation (QAM). Below we have a number of constellation diagrams representing different QAMs.    a.  QPSK  b.  QAM-16  c.  QAM-64   With 16 bits of modulation (QAM-16) we can send four bits of data. Since,   \n    \\log_2{V}   The example below shows the mapping of bits to symbols in QAM-16.", 
+            "title": "Modems"
+        }, 
+        {
+            "location": "/2016-01-14/#nyquist-limit", 
+            "text": "If an arbitrary signal has been run through a low-pass filter of bandwidth $H$, the filtered signal can be completely constructed by making only $2H$ samples per second. So the maximum speed of a noiseless channel is,   \n    2H \\log_2{(V)} ~\\text{bps}   where $V$ is the number of symbols in the constellation and $H$ is the bandwidth. In summary,   Baud Rate : The # of samples per second  Symbol Rate : Each baud $\\iff$ one symbol  Data Rate : $2H \\log_2{(V)}$ bps", 
+            "title": "Nyquist Limit"
+        }, 
+        {
+            "location": "/2016-01-14/#shannon-limit", 
+            "text": "For any degree of noise contamination ($N$) on a communication channel it is possible to communicate discrete data near error free at a maximum rate of   \n    H \\log_2{\\left( 1 + \\frac{S}{N}\\right)} ~\\text{bps}   where $\\frac{S}{N}$ is the signal to noise ratio and $H$ is the bandwidth.", 
+            "title": "Shannon Limit"
+        }, 
+        {
+            "location": "/2016-01-14/#internet-access-through-a-phone", 
+            "text": "The first access was through analogue dialup. A Modem was used on a telephone line with unshielded twisted pair (UTP). You could receive at up to 56 Kbps down. It had an $8~\\text{KHz}$ band, $8$ symbols per second and 256-QAM (8 bits).   Asymmetric DSL (ADSL)  ADSL was introduced to free up more bandwidth. It provides upstream and downstream at the same time. The DSL modem is then connect to your computer.", 
+            "title": "Internet access through a Phone"
+        }, 
+        {
+            "location": "/2016-01-14/#internet-access-though-a-cable-line", 
+            "text": "This uses a a shared coaxial cable, internet access is provided through Hybrid Fibre Coaxial (HFC) Protocol (DOCSIS). They divided the frequency band into sections for different tasks.", 
+            "title": "Internet access though a Cable Line"
         }
     ]
 }
