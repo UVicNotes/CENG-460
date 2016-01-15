@@ -2,23 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CENG 460\n\n\nSpring 2016\n\n\n\n\nInstructor\n: Lin Cai\n\n\nOffice\n: EOW 317\n\n\nEmail\n: \ncai@uvic.ca\n\n\nWebsite\n: \nLink\n\n\nUser\n: \nceng460\n\n\nPass\n: \n460notes\n\n\n\n\n\n\n\n\nOverview\n\n\nThis course will introduce the fundamental concepts in computer communications networks, to help students understand the principles and practice of designing, building, and operating computer networks, particularly the Internet.\n\n\nPrerequisites\n\n\nCSC 230 or equivalent\n\n\nTextbook\n\n\nComputer Networks, Fifth Edition, Andrew S. Tanenbaum and David J. Wetherall, Prentice Hall, 2010, ISBN: 0-13-212695-8 \n\n\nReference\n\n\nComputer Networking: A Top-Down Approach, Fifth Edition, James F. Kurose and Keith W. Ross, Addison Wesley, 2009, ISBN-10: 0136079679\n\n\nOffice Hours\n\n\nMR 13:00-14:30, or by appointment.\n\n\nLectures\n\n\nMR 11:30-12:50 COR B108 --- \nLecture Schedule\n\n\nLabs\n\n\nLabs will be using Wireshark. This course will discuss Networks and Network Protocols.\n\n\nAssessment\n\n\n\n\n\n\n\n\nTask\n\n\nWeight\n\n\n\n\n\n\n\n\n\n\nAssignments\n\n\n10%\n\n\n\n\n\n\nLab\n\n\n20%\n\n\n\n\n\n\nMidterm\n\n\n30%\n\n\n\n\n\n\nFinal\n\n\n40%", 
+            "text": "CENG 460\n\n\nSpring 2016\n\n\nCourse Website\n\n\n\n\nInstructor\n: Lin Cai\n\n\nOffice\n: EOW 317\n\n\nEmail\n: \ncai@uvic.ca\n\n\nWebsite Access\n: \nceng460\n/\n460notes\n\n\nOffice Hours\n: Mondays \n Thursdays, 1:00 PM to 2:30 PM, or by appointment\n\n\nLectures\n: Mondays \n Thursdays, 11:30 AM to 12:50 PM - \nSchedule\n\n\n\n\nOverview\n\n\nThis course will introduce the fundamental concepts in computer communications networks, to help students understand the principles and practice of designing, building, and operating computer networks, particularly the Internet.\n\n\nTextbook\n\n\nComputer Networks, Fifth Edition, Andrew S. Tanenbaum and David J. Wetherall, Prentice Hall, 2010, ISBN: 0-13-212695-8 \n\n\nReference\n\n\nComputer Networking: A Top-Down Approach, Fifth Edition, James F. Kurose and Keith W. Ross, Addison Wesley, 2009, ISBN-10: 0136079679\n\n\nAssessment\n\n\n\n\n\n\n\n\nTask\n\n\nWeight\n\n\n\n\n\n\n\n\n\n\nAssignments\n\n\n10%\n\n\n\n\n\n\nLab\n\n\n20%\n\n\n\n\n\n\nMidterm\n\n\n30%\n\n\n\n\n\n\nFinal\n\n\n40%", 
             "title": "Home"
         }, 
         {
             "location": "/#ceng-460", 
-            "text": "Spring 2016   Instructor : Lin Cai  Office : EOW 317  Email :  cai@uvic.ca  Website :  Link  User :  ceng460  Pass :  460notes", 
+            "text": "Spring 2016", 
             "title": "CENG 460"
+        }, 
+        {
+            "location": "/#course-website", 
+            "text": "Instructor : Lin Cai  Office : EOW 317  Email :  cai@uvic.ca  Website Access :  ceng460 / 460notes  Office Hours : Mondays   Thursdays, 1:00 PM to 2:30 PM, or by appointment  Lectures : Mondays   Thursdays, 11:30 AM to 12:50 PM -  Schedule", 
+            "title": "Course Website"
         }, 
         {
             "location": "/#overview", 
             "text": "This course will introduce the fundamental concepts in computer communications networks, to help students understand the principles and practice of designing, building, and operating computer networks, particularly the Internet.", 
             "title": "Overview"
-        }, 
-        {
-            "location": "/#prerequisites", 
-            "text": "CSC 230 or equivalent", 
-            "title": "Prerequisites"
         }, 
         {
             "location": "/#textbook", 
@@ -29,21 +29,6 @@
             "location": "/#reference", 
             "text": "Computer Networking: A Top-Down Approach, Fifth Edition, James F. Kurose and Keith W. Ross, Addison Wesley, 2009, ISBN-10: 0136079679", 
             "title": "Reference"
-        }, 
-        {
-            "location": "/#office-hours", 
-            "text": "MR 13:00-14:30, or by appointment.", 
-            "title": "Office Hours"
-        }, 
-        {
-            "location": "/#lectures", 
-            "text": "MR 11:30-12:50 COR B108 ---  Lecture Schedule", 
-            "title": "Lectures"
-        }, 
-        {
-            "location": "/#labs", 
-            "text": "Labs will be using Wireshark. This course will discuss Networks and Network Protocols.", 
-            "title": "Labs"
         }, 
         {
             "location": "/#assessment", 
