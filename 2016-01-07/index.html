@@ -75,6 +75,8 @@
                 
                     <li><a class="toctree-l4" href="#overview-of-networks">Overview of Networks</a></li>
                 
+                    <li><a class="toctree-l4" href="#packet-switching">Packet Switching</a></li>
+                
             
             </ul>
         
@@ -165,8 +167,57 @@
 </ul>
 </li>
 </ul>
-<h3 id="packet-switching">Packet Switching</h3>
-<p>Packets must arrive to the router before it is forwarded to its next destination. This is called <em>store and forward</em>.</p>
+<h2 id="packet-switching">Packet Switching</h2>
+<ul>
+<li>A method of transmitting data where the data is transformed into chunks called packets which are then shared across a newtork</li>
+<li>Each packet contains an address that directs the packet to its destination</li>
+<li>A channel is occupied during the transmission of the packet only, and upon completion of the transmission the channel is made available for the transfer of other traffic</li>
+<li>Used to increase network efficiency by allowing data to be transmitted between multiple start and end points along the same connection in the newtork</li>
+</ul>
+<h3 id="types-of-delay">Types of Delay</h3>
+<h4 id="propagation-delay">Propagation Delay</h4>
+<ul>
+<li>The time that it takes for the packet to reach its destination</li>
+<li>The time it takes for the head of the signal to travel from the sender to the receiver.</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">
+    D_{Prop} = \frac{d}{s} \\\\
+    \text{d = distance between nodes}
+    \text{s = speed of delivery}
+</script>
+</p>
+<h4 id="queueing-delay">Queueing Delay</h4>
+<ul>
+<li>The time that a packet waits in a queue before being able to be processed.</li>
+<li>The queue delay is the least stable and is based on the number of packets being sent at a particular time.</li>
+</ul>
+<h4 id="processing-delay">Processing Delay</h4>
+<ul>
+<li>The time it takes for a router to process the packet header</li>
+<li><em>i.e</em> The time it takes to decide where the packet needs to go, to look for errors and to decrypt and encrypt the packet</li>
+</ul>
+<h4 id="transmission-delay-store-and-forward-delay">Transmission Delay (Store-And-Forward Delay)</h4>
+<ul>
+<li>The time that it takes for a packet's bits to be sent into the channel</li>
+<li>This happens because it takes time to put the bits of a packet on the channel before those bits are actually sent</li>
+<li>Entirely dependent on the size of the packet.</li>
+</ul>
+<p>$$
+    D_{T} = \frac{L}{R} \\
+    \text{$D_T$ is the transmission delay in seconds}\\
+    \text{$L$ is the number of bits, and} \\
+    \text{R is the rate of transmission (say in bits per second)}
+$$</p>
+<h4 id="end-to-end-delay">End-To-End Delay</h4>
+<ul>
+<li>The total ammount of time for a packet to reeach its destination is</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">
+    d_\text{end to end} = d_\text{transmission} + d_\text{propagation} + d_\text{processing} + d_\text{queue}
+</script>
+</p>
 <h4 id="example">Example</h4>
 <p>You have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.</p>
 <p>
@@ -182,13 +233,7 @@
      = 15 ~\text{seconds}
 </script>
 </p>
-<p>So the total transmission time is 15 seconds. The end to end can also be shown as,</p>
-<p>
-<script type="math/tex; mode=display">
-    d_\text{end to end} = d_\text{transmission} + d_\text{propagation} + d_\text{processing} + d_\text{queue}
-</script>
-</p>
-<p>the queue delay is the least stable and is based on the packets in the queue.</p>
+<p>So the total transmission time is 15 seconds</p>
               
             </div>
           </div>
