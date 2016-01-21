@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ben Hawker">
+  
+  <title>2016 01 21 - CENG 460</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "2016 01 21";
+    var mkdocs_page_input_path = "2016-01-21.md";
+    var mkdocs_page_url = "/2016-01-21/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="https://cdn.rawgit.com/UVicNotes/UVicNotes/81099952ba789829fab1840e5d26cb5a2bf62011/helpers/mathjax.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CENG 460</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../2016-01-04/">2016 01 04</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../2016-01-07/">2016 01 07</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../2016-01-11/">2016 01 11</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../2016-01-14/">2016 01 14</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../2016-01-18/">2016 01 18</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">2016 01 21</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#lecture-6-notes">Lecture 6 - Notes</a></li>
+                
+                    <li><a class="toctree-l4" href="#link-characteristics">Link Characteristics</a></li>
+                
+                    <li><a class="toctree-l4" href="#link-layer">Link Layer</a></li>
+                
+                    <li><a class="toctree-l4" href="#packet-framing">Packet Framing</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CENG 460</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>2016 01 21</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/UVicNotes/CENG-460" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="lecture-6-notes">Lecture 6 - Notes</h1>
+<p><strong>January 21, 2016</strong>  </p>
+<h2 id="link-characteristics">Link Characteristics</h2>
+<ul>
+<li><strong>Speed</strong>: Bits per second</li>
+<li><strong>Delay</strong>: Milliseconds<ul>
+<li><strong>Transmission Delay</strong>: $\frac{\text{Packet Length}}{\text{Link Speed}}$ </li>
+<li><strong>Propagation Delay</strong>: $\frac{\text{Travel Distance}}{\text{Signal Speed}}$ </li>
+<li><strong>Processing Delay</strong>: Magic </li>
+<li><strong>Queueing Delay</strong>: Complicated</li>
+</ul>
+</li>
+<li><strong>Loss</strong>: Percentage<ul>
+<li>Transmission Error</li>
+<li>Network Congestion</li>
+</ul>
+</li>
+</ul>
+<h2 id="link-layer">Link Layer</h2>
+<ul>
+<li>Service Provided by the Physical Layer<ul>
+<li>Bit delivery </li>
+</ul>
+</li>
+<li>Service Provided to the Network Layer<ul>
+<li>Frame delivery</li>
+<li>Error control</li>
+<li>Flow control</li>
+<li>Medium Access</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network</td>
+<td>Packet</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>Frame</td>
+</tr>
+<tr>
+<td>Physical</td>
+<td>Bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="packet-framing">Packet Framing</h2>
+<p><strong><a href="https://en.wikipedia.org/wiki/Network_packet#Packet_framing">Wikipedia</a></strong></p>
+<p><em>definition</em>: Networks use <strong>Packet Framing</strong> to format data during transmission. It can be thought of as the envelope for a letter and contains addressing data as well as checksums for error checking.</p>
+<h3 id="byte-stuffing">Byte Stuffing</h3>
+<p><strong><a href="https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing">Wikipedia</a></strong></p>
+<p><em>definition</em>: When transmitting data using packet framing the data portion must be delimited. It is ofter <em>zero</em> delimited. <strong>Byte Stuffing</strong> is a way we escape the zero's already inside the data.</p>
+<h3 id="error-control">Error Control</h3>
+<p>How can we make sure the frames makes it to the other end correctly?</p>
+<ul>
+<li><strong>Frame Order</strong>: Added to the frames</li>
+<li><strong>Lost Frames</strong>: Wait for Timeout</li>
+<li><strong>Frame Correctness</strong>: Add check bits</li>
+</ul>
+<h4 id="hamming-distance">Hamming Distance</h4>
+<p>We can create codewords,</p>
+<p>
+<script type="math/tex; mode=display">
+    \underbrace{m ~\text{bits}}_\text{data} + \underbrace{r ~\text{bits}}_\text{check} = \underbrace{n ~\text{bits}}_\text{codeword}
+</script>
+</p>
+<p>These codewords can be generated a number of ways for checking the validity of data. A naive approach might be duplicating our data. For example if our data was $010$ then our check would also be $010$.</p>
+<p>The <strong>Hamming Distance</strong> of codewords $a$ and $b$ is the number of pairwise different bits. This distance of a codeword set is the smallest hamming distance in the set. If our set has distance $d$ then we can detect $d-1$ bits of error and correct,</p>
+<p>
+<script type="math/tex; mode=display">
+    \left\lfloor \frac{d-1}{2} \right\rfloor ~\text{bits}
+</script>
+</p>
+<p>of error.</p>
+<h5 id="example">Example</h5>
+<p>If our generation scheme is to replicate the data once, like above, and we have two bits of data (for simplicity),</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$0000$</th>
+<th>$0101$</th>
+<th>$1010$</th>
+<th>$1111$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0000$</td>
+<td>N/A</td>
+<td>$d=2$</td>
+<td>$d=2$</td>
+<td>$d=4$</td>
+</tr>
+<tr>
+<td>$0101$</td>
+<td>$d=2$</td>
+<td>N/A</td>
+<td>$d=4$</td>
+<td>$d=2$</td>
+</tr>
+<tr>
+<td>$1010$</td>
+<td>$d=2$</td>
+<td>$d=4$</td>
+<td>N/A</td>
+<td>$d=2$</td>
+</tr>
+<tr>
+<td>$1111$</td>
+<td>$d=4$</td>
+<td>$d=2$</td>
+<td>$d=2$</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>we can see the codeword set has a hamming distance of $d = 2$ so we can detect $1$ bit of error and correct no bits.</p>
+<h5 id="example_1">Example</h5>
+<p>If our generation scheme is instead to replicate the data twice, and we still have two bits of data,</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$000000$</th>
+<th>$010101$</th>
+<th>$101010$</th>
+<th>$111111$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$000000$</td>
+<td>N/A</td>
+<td>$d=3$</td>
+<td>$d=3$</td>
+<td>$d=6$</td>
+</tr>
+<tr>
+<td>$010101$</td>
+<td>$d=3$</td>
+<td>N/A</td>
+<td>$d=6$</td>
+<td>$d=3$</td>
+</tr>
+<tr>
+<td>$101010$</td>
+<td>$d=3$</td>
+<td>$d=6$</td>
+<td>N/A</td>
+<td>$d=3$</td>
+</tr>
+<tr>
+<td>$111111$</td>
+<td>$d=6$</td>
+<td>$d=3$</td>
+<td>$d=3$</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>we can see the codeword set has a hamming distance of $d = 3$ so we can detect $2$ bit of error and correct,</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    \left\lfloor \frac{d-1}{2} \right\rfloor ~\text{bits} &= \left\lfloor \frac{3-1}{2} \right\rfloor ~\text{bits} \newline
+    &= 1 ~\text{bits}
+\end{align}</script>
+</p>
+<h4 id="multi-dimensional-parity-check-code">Multi Dimensional Parity Check Code</h4>
+<p><strong>From <a href="https://en.wikipedia.org/wiki/Multidimensional_parity-check_code">Wikipedia</a></strong></p>
+<p>The two-dimensional parity-check code, usually called the optimal rectangular code, is the most popular form of multidimensional parity-check code.</p>
+<p>Assume that the goal is to transmit the four-digit message "1234", using a two-dimensional parity scheme. First the digits of the message are arranged in a rectangular pattern:</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">Column 1</th>
+<th align="center">Column 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Row 1</strong></td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center"><strong>Row 2</strong></td>
+<td align="center">3</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<p>Parity digits are then calculated by summing each column and row separately:</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">Column 1</th>
+<th align="center">Column 2</th>
+<th align="center">Parity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Row 1</strong></td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center"><strong>3</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>Row 2</strong></td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center"><strong>7</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>Parity</strong></td>
+<td align="center"><strong>4</strong></td>
+<td align="center"><strong>6</strong></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>The eight-digit sequence "12334746" is the message that is actually transmitted. If any single error occurs during transmission then this error can not only be detected but can also be corrected as well. Let us suppose that the received message contained an error in the first digit. The receiver rearranges the message into the grid:</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">Column 1</th>
+<th align="center">Column 2</th>
+<th align="center">Parity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Row 1</strong></td>
+<td align="center"><em>9</em></td>
+<td align="center">2</td>
+<td align="center"><strong>3</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>Row 2</strong></td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center"><strong>7</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>Parity</strong></td>
+<td align="center"><strong>4</strong></td>
+<td align="center"><strong>6</strong></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>The receiver can see that the first row and also the first column add up incorrectly. Using this knowledge and the assumption that only one error occurred, the receiver can correct the error. In order to handle two errors, a 4-dimensional scheme would be required, at the cost of more parity digits. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../2016-01-18/" class="btn btn-neutral" title="2016 01 18"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UVicNotes/CENG-460" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../2016-01-18/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>

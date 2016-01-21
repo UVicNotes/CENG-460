@@ -57,7 +57,7 @@
         }, 
         {
             "location": "/2016-01-07/", 
-            "text": "Lecture 2 - Notes\n\n\nJanuary 7, 2016\n\n\nOverview of Networks\n\n\nWhat is a network?\n\n\n\n\nEnd Systems, e.g., computers, phones, servers.\n\n\nCommunication Links, e.g., cell broadcasts, broadband\n\n\nIntermediate Systems, e.g., routers, switches\n\n\n\n\nTypes of Networks\n\n\n\n\nBroadcast\n\n\nCable TV\n\n\n\n\n\n\nSwitched\n\n\nCircuit Switching\n\n\nPublic Switched Telephone Network (PSTN)\n\n\n\n\n\n\nPacket Switching\n\n\nThe Internet\n\n\n\n\n\n\n\n\n\n\n\n\nPacket Switching\n\n\n\n\nA method of transmitting data where the data is transformed into chunks called packets which are then shared across a newtork\n\n\nEach packet contains an address that directs the packet to its destination\n\n\nA channel is occupied during the transmission of the packet only, and upon completion of the transmission the channel is made available for the transfer of other traffic\n\n\nUsed to increase network efficiency by allowing data to be transmitted between multiple start and end points along the same connection in the newtork\n\n\n\n\nTypes of Delay\n\n\nPropagation Delay\n\n\n\n\nThe time that it takes for the packet to reach its destination\n\n\nThe time it takes for the head of the signal to travel from the sender to the receiver.\n\n\n\n\n\n\n\n    D_{Prop} = \\frac{d}{s} \\\\\\\\\n    \\text{d = distance between nodes}\n    \\text{s = speed of delivery}\n\n\n\n\n\nQueueing Delay\n\n\n\n\nThe time that a packet waits in a queue before being able to be processed.\n\n\nThe queue delay is the least stable and is based on the number of packets being sent at a particular time.\n\n\n\n\nProcessing Delay\n\n\n\n\nThe time it takes for a router to process the packet header\n\n\ni.e\n The time it takes to decide where the packet needs to go, to look for errors and to decrypt and encrypt the packet\n\n\n\n\nTransmission Delay (Store-And-Forward Delay)\n\n\n\n\nThe time that it takes for a packet's bits to be sent into the channel\n\n\nThis happens because it takes time to put the bits of a packet on the channel before those bits are actually sent\n\n\nEntirely dependent on the size of the packet.\n\n\n\n\n$$\n    D_{T} = \\frac{L}{R} \\\\\n    \\text{$D_T$ is the transmission delay in seconds}\\\\\n    \\text{$L$ is the number of bits, and} \\\\\n    \\text{R is the rate of transmission (say in bits per second)}\n$$\n\n\nEnd-To-End Delay\n\n\n\n\nThe total ammount of time for a packet to reeach its destination is\n\n\n\n\n\n\n\n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}\n\n\n\n\n\nExample\n\n\nYou have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.\n\n\n\n\n\n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}\n\n\n\n\n\nSo the total transmission time is 15 seconds", 
+            "text": "Lecture 2 - Notes\n\n\nJanuary 7, 2016\n\n\nOverview of Networks\n\n\nWhat is a network?\n\n\n\n\nEnd Systems, e.g., computers, phones, servers.\n\n\nCommunication Links, e.g., cell broadcasts, broadband\n\n\nIntermediate Systems, e.g., routers, switches\n\n\n\n\nTypes of Networks\n\n\n\n\nBroadcast\n\n\nCable TV\n\n\n\n\n\n\nSwitched\n\n\nCircuit Switching\n\n\nPublic Switched Telephone Network (PSTN)\n\n\n\n\n\n\nPacket Switching\n\n\nThe Internet\n\n\n\n\n\n\n\n\n\n\n\n\nPacket Switching\n\n\nPackets must arrive to the router before it is forwarded to its next destination. This is called \nstore and forward\n.\n\n\nExample\n\n\nYou have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.\n\n\n\n\n\n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}\n\n\n\n\n\nSo the total transmission time is 15 seconds. The end to end can also be shown as,\n\n\n\n\n\n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}\n\n\n\n\n\nthe queue delay is the least stable and is based on the packets in the queue.", 
             "title": "2016 01 07"
         }, 
         {
@@ -67,13 +67,28 @@
         }, 
         {
             "location": "/2016-01-07/#overview-of-networks", 
-            "text": "What is a network?   End Systems, e.g., computers, phones, servers.  Communication Links, e.g., cell broadcasts, broadband  Intermediate Systems, e.g., routers, switches   Types of Networks   Broadcast  Cable TV    Switched  Circuit Switching  Public Switched Telephone Network (PSTN)    Packet Switching  The Internet", 
+            "text": "", 
             "title": "Overview of Networks"
         }, 
         {
+            "location": "/2016-01-07/#what-is-a-network", 
+            "text": "End Systems, e.g., computers, phones, servers.  Communication Links, e.g., cell broadcasts, broadband  Intermediate Systems, e.g., routers, switches", 
+            "title": "What is a network?"
+        }, 
+        {
+            "location": "/2016-01-07/#types-of-networks", 
+            "text": "Broadcast  Cable TV    Switched  Circuit Switching  Public Switched Telephone Network (PSTN)    Packet Switching  The Internet", 
+            "title": "Types of Networks"
+        }, 
+        {
             "location": "/2016-01-07/#packet-switching", 
-            "text": "A method of transmitting data where the data is transformed into chunks called packets which are then shared across a newtork  Each packet contains an address that directs the packet to its destination  A channel is occupied during the transmission of the packet only, and upon completion of the transmission the channel is made available for the transfer of other traffic  Used to increase network efficiency by allowing data to be transmitted between multiple start and end points along the same connection in the newtork   Types of Delay  Propagation Delay   The time that it takes for the packet to reach its destination  The time it takes for the head of the signal to travel from the sender to the receiver.    \n    D_{Prop} = \\frac{d}{s} \\\\\\\\\n    \\text{d = distance between nodes}\n    \\text{s = speed of delivery}   Queueing Delay   The time that a packet waits in a queue before being able to be processed.  The queue delay is the least stable and is based on the number of packets being sent at a particular time.   Processing Delay   The time it takes for a router to process the packet header  i.e  The time it takes to decide where the packet needs to go, to look for errors and to decrypt and encrypt the packet   Transmission Delay (Store-And-Forward Delay)   The time that it takes for a packet's bits to be sent into the channel  This happens because it takes time to put the bits of a packet on the channel before those bits are actually sent  Entirely dependent on the size of the packet.   $$\n    D_{T} = \\frac{L}{R} \\\\\n    \\text{$D_T$ is the transmission delay in seconds}\\\\\n    \\text{$L$ is the number of bits, and} \\\\\n    \\text{R is the rate of transmission (say in bits per second)}\n$$  End-To-End Delay   The total ammount of time for a packet to reeach its destination is    \n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}   Example  You have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.   \n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}   So the total transmission time is 15 seconds", 
+            "text": "Packets must arrive to the router before it is forwarded to its next destination. This is called  store and forward .", 
             "title": "Packet Switching"
+        }, 
+        {
+            "location": "/2016-01-07/#example", 
+            "text": "You have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.   \n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}   So the total transmission time is 15 seconds. The end to end can also be shown as,   \n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}   the queue delay is the least stable and is based on the packets in the queue.", 
+            "title": "Example"
         }, 
         {
             "location": "/2016-01-11/", 
@@ -92,8 +107,18 @@
         }, 
         {
             "location": "/2016-01-11/#internet-history", 
-            "text": "ARAPAnet  was developed by DARPA and the US Department of Defence with the goal of passing packets (using packet switching) on a large distributed network. In addition they wanted the communications network to,   be  redundant  and resilient to attack, i.e., nodes being destroyed  support  multiple types of data  including multiple communication services  accommodate a  variety of networks  and infrastructure   Topologies     Topology  Delay  Reliability  # of Links      Mesh  short  high  $O(n^2)$    Ring  long  low  $O(n)$    Star  long  low  $O(n)$    Tree  $\\lg(n)$  depends on node  $O(n-1)$     In Canada   CA*net: 1990 -- 1997  CA*net II: 1995 -- 2000  CA*net 3: 1998 -- 2002  CA*net 4: 2002 -- Present", 
+            "text": "ARAPAnet  was developed by DARPA and the US Department of Defence with the goal of passing packets (using packet switching) on a large distributed network. In addition they wanted the communications network to,   be  redundant  and resilient to attack, i.e., nodes being destroyed  support  multiple types of data  including multiple communication services  accommodate a  variety of networks  and infrastructure", 
             "title": "Internet History"
+        }, 
+        {
+            "location": "/2016-01-11/#topologies", 
+            "text": "Topology  Delay  Reliability  # of Links      Mesh  short  high  $O(n^2)$    Ring  long  low  $O(n)$    Star  long  low  $O(n)$    Tree  $\\lg(n)$  depends on node  $O(n-1)$", 
+            "title": "Topologies"
+        }, 
+        {
+            "location": "/2016-01-11/#in-canada", 
+            "text": "CA*net: 1990 -- 1997  CA*net II: 1995 -- 2000  CA*net 3: 1998 -- 2002  CA*net 4: 2002 -- Present", 
+            "title": "In Canada"
         }, 
         {
             "location": "/2016-01-14/", 
@@ -132,8 +157,13 @@
         }, 
         {
             "location": "/2016-01-14/#internet-access-through-a-phone", 
-            "text": "The first access was through analogue dialup. A Modem was used on a telephone line with unshielded twisted pair (UTP). You could receive at up to 56 Kbps down. It had an $8~\\text{KHz}$ band, $8$ symbols per second and 256-QAM (8 bits).  Asymmetric DSL (ADSL)  ADSL was introduced to free up more bandwidth. It provides upstream and downstream at the same time. The DSL modem is then connect to your computer.", 
+            "text": "The first access was through analogue dialup. A Modem was used on a telephone line with unshielded twisted pair (UTP). You could receive at up to 56 Kbps down. It had an $8~\\text{KHz}$ band, $8$ symbols per second and 256-QAM (8 bits).", 
             "title": "Internet access through a Phone"
+        }, 
+        {
+            "location": "/2016-01-14/#asymmetric-dsl-adsl", 
+            "text": "ADSL was introduced to free up more bandwidth. It provides upstream and downstream at the same time. The DSL modem is then connect to your computer.", 
+            "title": "Asymmetric DSL (ADSL)"
         }, 
         {
             "location": "/2016-01-14/#internet-access-through-a-cable-line", 
@@ -142,7 +172,7 @@
         }, 
         {
             "location": "/2016-01-18/", 
-            "text": "Lecture 5 - Notes\n\n\nJanuary 18, 2016\n\n\nPhysical Layer Internet Backbone\n\n\nInternet access\n\n\n\n\nPhone Line\n\n\nDialup\n\n\nDigital Subscriber Line (DSL)\n\n\nAsynchronous Digital Subscriber Line (ADSL)\n\n\nCable Line\n\n\nBroadband Modem\n\n\nEthernet\n\n\nLocal Area Network (LAN)\n\n\nWireless\n\n\nWiFi\n\n\nWireless Local Area Network (WLAN)\n\n\nWireless Metropolitan Area Network (WMAN)\n\n\nCellular\n\n\n\n\nSwitching Technologies\n\n\n\n\nCircuit Switched\n: Each message requests a transmission line, when granted it transmits on an assigned line.\n\n\nMessage Switched\n: Messages are sent sequentially on separate lines.\n\n\nPacket Switching\n: Packets are sent on separate lines and decoded at the end.\n\n\n\n\nMultiplexing\n\n\n\n\nA way of sending multiple signals or streams of information over communications link at the same time.\n\n\n\n\nFrequency-Division Multiplexing (FDM)\n\n\n\n\nThe total available bandwith in a channel is divided into no overlapping sub channels each of which is used to carry a separate signal\n\n\nTypically used for radio\n\n\n\n\n\n\n\n\nExample: \nSuppose a long-distance cable is available with a bandwidth allotment of three megahertz (3 MHz). This is 3,000 kHz, so in theory, it is possible to place 1,000 signals, each 3 kHz wide, into the long-distance channel. The circuit that does this is known as a multiplexer. It accepts the input from each individual end user, and generates a signal on a different frequency for each of the inputs.\n\n\nsource\n\n\n\n\nWavelength Division Multiplexing (WDM)\n\n\n\n\nMultiplexing is done by using different wavelengths (colors) of light as the sub channels.\n\n\n\n\n\n\n\n\nWDM is multiplexing for optical channels\n\n\n\n\nTime-Division Multiplexing (TDM)\n\n\n\n\nSynchronized switches at each end of the transmission line multiplex and demultiplex the streams of data so that each signal appears on the line only a fraction of time in an alternating pattern.\n\n\n\n\n\n\n\n\nIn the image, when 4 streams are multiplexed using TDM the bits from any particular stream are spaced apart at interval of 4. So bits at \n4*i\n (\ni\n is an integer), Come from stream 1 and \n4*i + 1\n come from stream 2 and so on.\n\n\n\n\nInternet Backbone\n\n\n\n\nTO DO", 
+            "text": "Lecture 5 - Notes\n\n\nJanuary 18, 2016\n\n\nPhysical Layer Internet Backbone\n\n\nInternet access\n\n\n\n\nPhone Line\n\n\nDialup\n\n\nDigital Subscriber Line (DSL)\n\n\nAsynchronous Digital Subscriber Line (ADSL)\n\n\n\n\n\n\nCable Line\n\n\nBroadband Modem\n\n\n\n\n\n\nEthernet\n\n\nLocal Area Network (LAN)\n\n\n\n\n\n\nWireless\n\n\nWiFi\n\n\nWireless Local Area Network (WLAN)\n\n\nWireless Metropolitan Area Network (WMAN)\n\n\nCellular\n\n\n\n\n\n\n\n\nSwitching Technologies\n\n\n\n\nCircuit Switched\n: Each message requests a transmission line, when granted it transmits on an assigned line.\n\n\nMessage Switched\n: Messages are sent sequentially on separate lines.\n\n\nPacket Switching\n: Packets are sent on separate lines and decoded at the end.\n\n\n\n\nMultiplexing\n\n\n\n\nA way of sending multiple signals or streams of information over communications link at the same time.\n\n\n\n\nFrequency-Division Multiplexing (FDM)\n\n\n\n\nThe total available bandwith in a channel is divided into no overlapping sub channels each of which is used to carry a separate signal\n\n\nTypically used for radio\n\n\n\n\n\n\n\n\nExample: \nSuppose a long-distance cable is available with a bandwidth allotment of three megahertz (3 MHz). This is 3,000 kHz, so in theory, it is possible to place 1,000 signals, each 3 kHz wide, into the long-distance channel. The circuit that does this is known as a multiplexer. It accepts the input from each individual end user, and generates a signal on a different frequency for each of the inputs.\n\n\nsource\n\n\n\n\nWavelength Division Multiplexing (WDM)\n\n\n\n\nMultiplexing is done by using different wavelengths (colors) of light as the sub channels.\n\n\n\n\n\n\n\n\nWDM is multiplexing for optical channels\n\n\n\n\nTime-Division Multiplexing (TDM)\n\n\n\n\nSynchronized switches at each end of the transmission line multiplex and demultiplex the streams of data so that each signal appears on the line only a fraction of time in an alternating pattern.\n\n\n\n\n\n\n\n\nIn the image, when 4 streams are multiplexed using TDM the bits from any particular stream are spaced apart at interval of 4. So bits at \n4*i\n (\ni\n is an integer), Come from stream 1 and \n4*i + 1\n come from stream 2 and so on.\n\n\n\n\nInternet Backbone\n\n\n\n\nTO DO", 
             "title": "2016 01 18"
         }, 
         {
@@ -152,8 +182,13 @@
         }, 
         {
             "location": "/2016-01-18/#physical-layer-internet-backbone", 
-            "text": "Internet access   Phone Line  Dialup  Digital Subscriber Line (DSL)  Asynchronous Digital Subscriber Line (ADSL)  Cable Line  Broadband Modem  Ethernet  Local Area Network (LAN)  Wireless  WiFi  Wireless Local Area Network (WLAN)  Wireless Metropolitan Area Network (WMAN)  Cellular", 
+            "text": "", 
             "title": "Physical Layer Internet Backbone"
+        }, 
+        {
+            "location": "/2016-01-18/#internet-access", 
+            "text": "Phone Line  Dialup  Digital Subscriber Line (DSL)  Asynchronous Digital Subscriber Line (ADSL)    Cable Line  Broadband Modem    Ethernet  Local Area Network (LAN)    Wireless  WiFi  Wireless Local Area Network (WLAN)  Wireless Metropolitan Area Network (WMAN)  Cellular", 
+            "title": "Internet access"
         }, 
         {
             "location": "/2016-01-18/#switching-technologies", 
@@ -162,8 +197,83 @@
         }, 
         {
             "location": "/2016-01-18/#multiplexing", 
-            "text": "A way of sending multiple signals or streams of information over communications link at the same time.   Frequency-Division Multiplexing (FDM)   The total available bandwith in a channel is divided into no overlapping sub channels each of which is used to carry a separate signal  Typically used for radio     Example:  Suppose a long-distance cable is available with a bandwidth allotment of three megahertz (3 MHz). This is 3,000 kHz, so in theory, it is possible to place 1,000 signals, each 3 kHz wide, into the long-distance channel. The circuit that does this is known as a multiplexer. It accepts the input from each individual end user, and generates a signal on a different frequency for each of the inputs.  source   Wavelength Division Multiplexing (WDM)   Multiplexing is done by using different wavelengths (colors) of light as the sub channels.     WDM is multiplexing for optical channels   Time-Division Multiplexing (TDM)   Synchronized switches at each end of the transmission line multiplex and demultiplex the streams of data so that each signal appears on the line only a fraction of time in an alternating pattern.     In the image, when 4 streams are multiplexed using TDM the bits from any particular stream are spaced apart at interval of 4. So bits at  4*i  ( i  is an integer), Come from stream 1 and  4*i + 1  come from stream 2 and so on.   Internet Backbone   TO DO", 
+            "text": "A way of sending multiple signals or streams of information over communications link at the same time.", 
             "title": "Multiplexing"
+        }, 
+        {
+            "location": "/2016-01-18/#frequency-division-multiplexing-fdm", 
+            "text": "The total available bandwith in a channel is divided into no overlapping sub channels each of which is used to carry a separate signal  Typically used for radio     Example:  Suppose a long-distance cable is available with a bandwidth allotment of three megahertz (3 MHz). This is 3,000 kHz, so in theory, it is possible to place 1,000 signals, each 3 kHz wide, into the long-distance channel. The circuit that does this is known as a multiplexer. It accepts the input from each individual end user, and generates a signal on a different frequency for each of the inputs.  source", 
+            "title": "Frequency-Division Multiplexing (FDM)"
+        }, 
+        {
+            "location": "/2016-01-18/#wavelength-division-multiplexing-wdm", 
+            "text": "Multiplexing is done by using different wavelengths (colors) of light as the sub channels.     WDM is multiplexing for optical channels", 
+            "title": "Wavelength Division Multiplexing (WDM)"
+        }, 
+        {
+            "location": "/2016-01-18/#time-division-multiplexing-tdm", 
+            "text": "Synchronized switches at each end of the transmission line multiplex and demultiplex the streams of data so that each signal appears on the line only a fraction of time in an alternating pattern.     In the image, when 4 streams are multiplexed using TDM the bits from any particular stream are spaced apart at interval of 4. So bits at  4*i  ( i  is an integer), Come from stream 1 and  4*i + 1  come from stream 2 and so on.", 
+            "title": "Time-Division Multiplexing (TDM)"
+        }, 
+        {
+            "location": "/2016-01-18/#internet-backbone", 
+            "text": "TO DO", 
+            "title": "Internet Backbone"
+        }, 
+        {
+            "location": "/2016-01-21/", 
+            "text": "Lecture 6 - Notes\n\n\nJanuary 21, 2016\n  \n\n\nLink Characteristics\n\n\n\n\nSpeed\n: Bits per second\n\n\nDelay\n: Milliseconds\n\n\nTransmission Delay\n: $\\frac{\\text{Packet Length}}{\\text{Link Speed}}$ \n\n\nPropagation Delay\n: $\\frac{\\text{Travel Distance}}{\\text{Signal Speed}}$ \n\n\nProcessing Delay\n: Magic \n\n\nQueueing Delay\n: Complicated\n\n\n\n\n\n\nLoss\n: Percentage\n\n\nTransmission Error\n\n\nNetwork Congestion\n\n\n\n\n\n\n\n\nLink Layer\n\n\n\n\nService Provided by the Physical Layer\n\n\nBit delivery \n\n\n\n\n\n\nService Provided to the Network Layer\n\n\nFrame delivery\n\n\nError control\n\n\nFlow control\n\n\nMedium Access\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLayer\n\n\nUnits\n\n\n\n\n\n\n\n\n\n\nNetwork\n\n\nPacket\n\n\n\n\n\n\nLink\n\n\nFrame\n\n\n\n\n\n\nPhysical\n\n\nBits\n\n\n\n\n\n\n\n\nPacket Framing\n\n\nWikipedia\n\n\ndefinition\n: Networks use \nPacket Framing\n to format data during transmission. It can be thought of as the envelope for a letter and contains addressing data as well as checksums for error checking.\n\n\nByte Stuffing\n\n\nWikipedia\n\n\ndefinition\n: When transmitting data using packet framing the data portion must be delimited. It is ofter \nzero\n delimited. \nByte Stuffing\n is a way we escape the zero's already inside the data.\n\n\nError Control\n\n\nHow can we make sure the frames makes it to the other end correctly?\n\n\n\n\nFrame Order\n: Added to the frames\n\n\nLost Frames\n: Wait for Timeout\n\n\nFrame Correctness\n: Add check bits\n\n\n\n\nHamming Distance\n\n\nWe can create codewords,\n\n\n\n\n\n    \\underbrace{m ~\\text{bits}}_\\text{data} + \\underbrace{r ~\\text{bits}}_\\text{check} = \\underbrace{n ~\\text{bits}}_\\text{codeword}\n\n\n\n\n\nThese codewords can be generated a number of ways for checking the validity of data. A naive approach might be duplicating our data. For example if our data was $010$ then our check would also be $010$.\n\n\nThe \nHamming Distance\n of codewords $a$ and $b$ is the number of pairwise different bits. This distance of a codeword set is the smallest hamming distance in the set. If our set has distance $d$ then we can detect $d-1$ bits of error and correct,\n\n\n\n\n\n    \\left\\lfloor \\frac{d-1}{2} \\right\\rfloor ~\\text{bits}\n\n\n\n\n\nof error.\n\n\nExample\n\n\nIf our generation scheme is to replicate the data once, like above, and we have two bits of data (for simplicity),\n\n\n\n\n\n\n\n\n\n\n$0000$\n\n\n$0101$\n\n\n$1010$\n\n\n$1111$\n\n\n\n\n\n\n\n\n\n\n$0000$\n\n\nN/A\n\n\n$d=2$\n\n\n$d=2$\n\n\n$d=4$\n\n\n\n\n\n\n$0101$\n\n\n$d=2$\n\n\nN/A\n\n\n$d=4$\n\n\n$d=2$\n\n\n\n\n\n\n$1010$\n\n\n$d=2$\n\n\n$d=4$\n\n\nN/A\n\n\n$d=2$\n\n\n\n\n\n\n$1111$\n\n\n$d=4$\n\n\n$d=2$\n\n\n$d=2$\n\n\nN/A\n\n\n\n\n\n\n\n\nwe can see the codeword set has a hamming distance of $d = 2$ so we can detect $1$ bit of error and correct no bits.\n\n\nExample\n\n\nIf our generation scheme is instead to replicate the data twice, and we still have two bits of data,\n\n\n\n\n\n\n\n\n\n\n$000000$\n\n\n$010101$\n\n\n$101010$\n\n\n$111111$\n\n\n\n\n\n\n\n\n\n\n$000000$\n\n\nN/A\n\n\n$d=3$\n\n\n$d=3$\n\n\n$d=6$\n\n\n\n\n\n\n$010101$\n\n\n$d=3$\n\n\nN/A\n\n\n$d=6$\n\n\n$d=3$\n\n\n\n\n\n\n$101010$\n\n\n$d=3$\n\n\n$d=6$\n\n\nN/A\n\n\n$d=3$\n\n\n\n\n\n\n$111111$\n\n\n$d=6$\n\n\n$d=3$\n\n\n$d=3$\n\n\nN/A\n\n\n\n\n\n\n\n\nwe can see the codeword set has a hamming distance of $d = 3$ so we can detect $2$ bit of error and correct,\n\n\n\n\n\\begin{align}\n    \\left\\lfloor \\frac{d-1}{2} \\right\\rfloor ~\\text{bits} &= \\left\\lfloor \\frac{3-1}{2} \\right\\rfloor ~\\text{bits} \\newline\n    &= 1 ~\\text{bits}\n\\end{align}\n\n\n\n\nMulti Dimensional Parity Check Code\n\n\nFrom \nWikipedia\n\n\nThe two-dimensional parity-check code, usually called the optimal rectangular code, is the most popular form of multidimensional parity-check code.\n\n\nAssume that the goal is to transmit the four-digit message \"1234\", using a two-dimensional parity scheme. First the digits of the message are arranged in a rectangular pattern:\n\n\n\n\n\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n\n\n\n\n\n\n\n\nRow 1\n\n\n1\n\n\n2\n\n\n\n\n\n\nRow 2\n\n\n3\n\n\n4\n\n\n\n\n\n\n\n\nParity digits are then calculated by summing each column and row separately:\n\n\n\n\n\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\nParity\n\n\n\n\n\n\n\n\n\n\nRow 1\n\n\n1\n\n\n2\n\n\n3\n\n\n\n\n\n\nRow 2\n\n\n3\n\n\n4\n\n\n7\n\n\n\n\n\n\nParity\n\n\n4\n\n\n6\n\n\n\n\n\n\n\n\n\n\nThe eight-digit sequence \"12334746\" is the message that is actually transmitted. If any single error occurs during transmission then this error can not only be detected but can also be corrected as well. Let us suppose that the received message contained an error in the first digit. The receiver rearranges the message into the grid:\n\n\n\n\n\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\nParity\n\n\n\n\n\n\n\n\n\n\nRow 1\n\n\n9\n\n\n2\n\n\n3\n\n\n\n\n\n\nRow 2\n\n\n3\n\n\n4\n\n\n7\n\n\n\n\n\n\nParity\n\n\n4\n\n\n6\n\n\n\n\n\n\n\n\n\n\nThe receiver can see that the first row and also the first column add up incorrectly. Using this knowledge and the assumption that only one error occurred, the receiver can correct the error. In order to handle two errors, a 4-dimensional scheme would be required, at the cost of more parity digits.", 
+            "title": "2016 01 21"
+        }, 
+        {
+            "location": "/2016-01-21/#lecture-6-notes", 
+            "text": "January 21, 2016", 
+            "title": "Lecture 6 - Notes"
+        }, 
+        {
+            "location": "/2016-01-21/#link-characteristics", 
+            "text": "Speed : Bits per second  Delay : Milliseconds  Transmission Delay : $\\frac{\\text{Packet Length}}{\\text{Link Speed}}$   Propagation Delay : $\\frac{\\text{Travel Distance}}{\\text{Signal Speed}}$   Processing Delay : Magic   Queueing Delay : Complicated    Loss : Percentage  Transmission Error  Network Congestion", 
+            "title": "Link Characteristics"
+        }, 
+        {
+            "location": "/2016-01-21/#link-layer", 
+            "text": "Service Provided by the Physical Layer  Bit delivery     Service Provided to the Network Layer  Frame delivery  Error control  Flow control  Medium Access        Layer  Units      Network  Packet    Link  Frame    Physical  Bits", 
+            "title": "Link Layer"
+        }, 
+        {
+            "location": "/2016-01-21/#packet-framing", 
+            "text": "Wikipedia  definition : Networks use  Packet Framing  to format data during transmission. It can be thought of as the envelope for a letter and contains addressing data as well as checksums for error checking.", 
+            "title": "Packet Framing"
+        }, 
+        {
+            "location": "/2016-01-21/#byte-stuffing", 
+            "text": "Wikipedia  definition : When transmitting data using packet framing the data portion must be delimited. It is ofter  zero  delimited.  Byte Stuffing  is a way we escape the zero's already inside the data.", 
+            "title": "Byte Stuffing"
+        }, 
+        {
+            "location": "/2016-01-21/#error-control", 
+            "text": "How can we make sure the frames makes it to the other end correctly?   Frame Order : Added to the frames  Lost Frames : Wait for Timeout  Frame Correctness : Add check bits", 
+            "title": "Error Control"
+        }, 
+        {
+            "location": "/2016-01-21/#hamming-distance", 
+            "text": "We can create codewords,   \n    \\underbrace{m ~\\text{bits}}_\\text{data} + \\underbrace{r ~\\text{bits}}_\\text{check} = \\underbrace{n ~\\text{bits}}_\\text{codeword}   These codewords can be generated a number of ways for checking the validity of data. A naive approach might be duplicating our data. For example if our data was $010$ then our check would also be $010$.  The  Hamming Distance  of codewords $a$ and $b$ is the number of pairwise different bits. This distance of a codeword set is the smallest hamming distance in the set. If our set has distance $d$ then we can detect $d-1$ bits of error and correct,   \n    \\left\\lfloor \\frac{d-1}{2} \\right\\rfloor ~\\text{bits}   of error.", 
+            "title": "Hamming Distance"
+        }, 
+        {
+            "location": "/2016-01-21/#example", 
+            "text": "If our generation scheme is to replicate the data once, like above, and we have two bits of data (for simplicity),      $0000$  $0101$  $1010$  $1111$      $0000$  N/A  $d=2$  $d=2$  $d=4$    $0101$  $d=2$  N/A  $d=4$  $d=2$    $1010$  $d=2$  $d=4$  N/A  $d=2$    $1111$  $d=4$  $d=2$  $d=2$  N/A     we can see the codeword set has a hamming distance of $d = 2$ so we can detect $1$ bit of error and correct no bits.", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/2016-01-21/#example_1", 
+            "text": "If our generation scheme is instead to replicate the data twice, and we still have two bits of data,      $000000$  $010101$  $101010$  $111111$      $000000$  N/A  $d=3$  $d=3$  $d=6$    $010101$  $d=3$  N/A  $d=6$  $d=3$    $101010$  $d=3$  $d=6$  N/A  $d=3$    $111111$  $d=6$  $d=3$  $d=3$  N/A     we can see the codeword set has a hamming distance of $d = 3$ so we can detect $2$ bit of error and correct,   \\begin{align}\n    \\left\\lfloor \\frac{d-1}{2} \\right\\rfloor ~\\text{bits} &= \\left\\lfloor \\frac{3-1}{2} \\right\\rfloor ~\\text{bits} \\newline\n    &= 1 ~\\text{bits}\n\\end{align}", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/2016-01-21/#multi-dimensional-parity-check-code", 
+            "text": "From  Wikipedia  The two-dimensional parity-check code, usually called the optimal rectangular code, is the most popular form of multidimensional parity-check code.  Assume that the goal is to transmit the four-digit message \"1234\", using a two-dimensional parity scheme. First the digits of the message are arranged in a rectangular pattern:      Column 1  Column 2      Row 1  1  2    Row 2  3  4     Parity digits are then calculated by summing each column and row separately:      Column 1  Column 2  Parity      Row 1  1  2  3    Row 2  3  4  7    Parity  4  6      The eight-digit sequence \"12334746\" is the message that is actually transmitted. If any single error occurs during transmission then this error can not only be detected but can also be corrected as well. Let us suppose that the received message contained an error in the first digit. The receiver rearranges the message into the grid:      Column 1  Column 2  Parity      Row 1  9  2  3    Row 2  3  4  7    Parity  4  6      The receiver can see that the first row and also the first column add up incorrectly. Using this knowledge and the assumption that only one error occurred, the receiver can correct the error. In order to handle two errors, a 4-dimensional scheme would be required, at the cost of more parity digits.", 
+            "title": "Multi Dimensional Parity Check Code"
         }
     ]
 }
