@@ -8,7 +8,7 @@
   
   <meta name="author" content="Ben Hawker">
   
-  <title>2016 01 11 - CENG 460</title>
+  <title>2016 01 25 - CENG 460</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "2016 01 11";
-    var mkdocs_page_input_path = "2016-01-11.md";
-    var mkdocs_page_url = "/2016-01-11/";
+    var mkdocs_page_name = "2016 01 25";
+    var mkdocs_page_input_path = "2016-01-25.md";
+    var mkdocs_page_url = "/2016-01-25/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -78,19 +78,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">2016 01 11</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#lecture-3-notes">Lecture 3 - Notes</a></li>
-                
-                    <li><a class="toctree-l4" href="#virtual-circuit-switching">Virtual Circuit Switching</a></li>
-                
-                    <li><a class="toctree-l4" href="#internet-history">Internet History</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../2016-01-11/">2016 01 11</a>
         
     </li>
 <li>
@@ -117,8 +106,17 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../2016-01-25/">2016 01 25</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">2016 01 25</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#lecture-7-notes">Lecture 7 - Notes</a></li>
+                
+                    <li><a class="toctree-l4" href="#error-control-continued">Error Control - Continued</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -145,7 +143,7 @@
     
       
     
-    <li>2016 01 11</li>
+    <li>2016 01 25</li>
     <li class="wy-breadcrumbs-aside">
       
         
@@ -159,62 +157,15 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="lecture-3-notes">Lecture 3 - Notes</h1>
-<p><strong>January 11, 2016</strong></p>
-<h2 id="virtual-circuit-switching">Virtual Circuit Switching</h2>
-<p>With <strong>Virtual Circuit Switching</strong> we reserve resources based on previous traffic patterns.</p>
-<p>Basically emulates a circuit switched connection using packet. Packets are given resource identifiers that define their destination.</p>
-<h2 id="internet-history">Internet History</h2>
-<p><strong>ARAPAnet</strong> was developed by DARPA and the US Department of Defence with the goal of passing packets (using packet switching) on a large distributed network. In addition they wanted the communications network to,</p>
-<ul>
-<li>be <strong>redundant</strong> and resilient to attack, i.e., nodes being destroyed</li>
-<li>support <strong>multiple types of data</strong> including multiple communication services</li>
-<li>accommodate a <strong>variety of networks</strong> and infrastructure</li>
-</ul>
-<h3 id="topologies">Topologies</h3>
-<table>
-<thead>
-<tr>
-<th>Topology</th>
-<th>Delay</th>
-<th>Reliability</th>
-<th># of Links</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Mesh</td>
-<td>short</td>
-<td>high</td>
-<td>$O(n^2)$</td>
-</tr>
-<tr>
-<td>Ring</td>
-<td>long</td>
-<td>low</td>
-<td>$O(n)$</td>
-</tr>
-<tr>
-<td>Star</td>
-<td>long</td>
-<td>low</td>
-<td>$O(n)$</td>
-</tr>
-<tr>
-<td>Tree</td>
-<td>$\lg(n)$</td>
-<td>depends on node</td>
-<td>$O(n-1)$</td>
-</tr>
-</tbody>
-</table>
-<h3 id="in-canada">In Canada</h3>
-<ul>
-<li>CA*net: 1990 -- 1997</li>
-<li>CA*net II: 1995 -- 2000</li>
-<li>CA*net 3: 1998 -- 2002</li>
-<li>CA*net 4: 2002 -- Present</li>
-</ul>
+                <h1 id="lecture-7-notes">Lecture 7 - Notes</h1>
+<p><strong>January 25, 2016</strong>  </p>
+<h2 id="error-control-continued">Error Control - Continued</h2>
+<h3 id="hamming-code">Hamming Code</h3>
+<p><strong><a href="https://en.wikipedia.org/wiki/Hamming_code">Wikipedia</a></strong></p>
+<p><em>definition</em>: <strong>Hamming codes</strong> can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.</p>
+<h3 id="crc">CRC</h3>
+<h3 id="correcting-error">Correcting Error</h3>
+<p>For connections were error is low (like wired networks) it can be more efficient to use less parity bits and only detect error. Then we can ask the sender to resend the package.</p>
               
             </div>
           </div>
@@ -222,10 +173,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../2016-01-14/" class="btn btn-neutral float-right" title="2016 01 14">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../2016-01-07/" class="btn btn-neutral" title="2016 01 07"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2016-01-21/" class="btn btn-neutral" title="2016 01 21"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -253,10 +202,8 @@
           <a href="https://github.com/UVicNotes/CENG-460" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../2016-01-07/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../2016-01-21/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../2016-01-14/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

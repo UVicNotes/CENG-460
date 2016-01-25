@@ -112,8 +112,17 @@
                 
                     <li><a class="toctree-l4" href="#packet-framing">Packet Framing</a></li>
                 
+                    <li><a class="toctree-l4" href="#error-control">Error Control</a></li>
+                
             
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../2016-01-25/">2016 01 25</a>
         
     </li>
 <li>
@@ -214,14 +223,15 @@
 <h3 id="byte-stuffing">Byte Stuffing</h3>
 <p><strong><a href="https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing">Wikipedia</a></strong></p>
 <p><em>definition</em>: When transmitting data using packet framing the data portion must be delimited. It is ofter <em>zero</em> delimited. <strong>Byte Stuffing</strong> is a way we escape the zero's already inside the data.</p>
-<h3 id="error-control">Error Control</h3>
+<p>With <strong>bit stuffing</strong> we can define a bit sequence as the escape sequence.</p>
+<h2 id="error-control">Error Control</h2>
 <p>How can we make sure the frames makes it to the other end correctly?</p>
 <ul>
 <li><strong>Frame Order</strong>: Added to the frames</li>
 <li><strong>Lost Frames</strong>: Wait for Timeout</li>
 <li><strong>Frame Correctness</strong>: Add check bits</li>
 </ul>
-<h4 id="hamming-distance">Hamming Distance</h4>
+<h3 id="hamming-distance">Hamming Distance</h3>
 <p>We can create codewords,</p>
 <p>
 <script type="math/tex; mode=display">
@@ -330,7 +340,7 @@
     &= 1 ~\text{bits}
 \end{align}</script>
 </p>
-<h4 id="multi-dimensional-parity-check-code">Multi Dimensional Parity Check Code</h4>
+<h3 id="multi-dimensional-parity-check-code">Multi Dimensional Parity Check Code</h3>
 <p><strong>From <a href="https://en.wikipedia.org/wiki/Multidimensional_parity-check_code">Wikipedia</a></strong></p>
 <p>The two-dimensional parity-check code, usually called the optimal rectangular code, is the most popular form of multidimensional parity-check code.</p>
 <p>Assume that the goal is to transmit the four-digit message "1234", using a two-dimensional parity scheme. First the digits of the message are arranged in a rectangular pattern:</p>
@@ -425,6 +435,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../2016-01-25/" class="btn btn-neutral float-right" title="2016 01 25">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
       
         <a href="../2016-01-18/" class="btn btn-neutral" title="2016 01 18"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
@@ -456,6 +468,8 @@
       
         <span><a href="../2016-01-18/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../2016-01-25/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
