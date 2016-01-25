@@ -180,51 +180,35 @@
 </li>
 </ul>
 <h2 id="packet-switching">Packet Switching</h2>
+<p><em>definition</em>: <strong>Packet switching</strong> is a method of transmitting data where the data is transformed into chunks --- called packets --- which are then shared across a network. Some properties of packet switching are</p>
 <ul>
-<li>A method of transmitting data where the data is transformed into chunks called packets which are then shared across a newtork</li>
 <li>Each packet contains an address that directs the packet to its destination</li>
 <li>A channel is occupied during the transmission of the packet only, and upon completion of the transmission the channel is made available for the transfer of other traffic</li>
-<li>Used to increase network efficiency by allowing data to be transmitted between multiple start and end points along the same connection in the newtork</li>
+<li>Increases network efficiency by allowing data to be transmitted between multiple start and end points along the same connection in the network</li>
 </ul>
 <h3 id="types-of-delay">Types of Delay</h3>
 <h4 id="propagation-delay">Propagation Delay</h4>
-<ul>
-<li>The time that it takes for the packet to reach its destination</li>
-<li>The time it takes for the head of the signal to travel from the sender to the receiver.</li>
-</ul>
+<p><em>definition</em>: The <strong>propagation delay</strong> is the amount of time that it takes for the head of the packet to reach its destination.</p>
 <p>
 <script type="math/tex; mode=display">
-    D_{Prop} = \frac{d}{s} \\\\
-    \text{d = distance between nodes} \\\\
-    \text{s = speed of delivery}
+    d_{prop} = \frac{d}{s}
 </script>
 </p>
+<p>where $d$ is the distance between the nodes and $s$ is the speed.</p>
 <h4 id="queueing-delay">Queueing Delay</h4>
-<ul>
-<li>The time that a packet waits in a queue before being able to be processed.</li>
-<li>The queue delay is the least stable and is based on the number of packets being sent at a particular time.</li>
-</ul>
+<p><em>definition</em>: The <strong>queueing delay</strong> is the time that a packet waits in a queue before being able to be processed. <em>It is the least predictable delay</em> and is based on the number of packets being sent at a particular time.</p>
 <h4 id="processing-delay">Processing Delay</h4>
-<ul>
-<li>The time it takes for a router to process the packet header</li>
-<li><em>i.e</em> The time it takes to decide where the packet needs to go, to look for errors and to decrypt and encrypt the packet</li>
-</ul>
+<p><em>definition</em>: The <em>processing delay</em> the time it takes for a router to process the packet header, <em>i.e</em>, The time it takes to decide where the packet needs to go, to look for errors and to decrypt and encrypt the packet.</p>
 <h4 id="transmission-delay-store-and-forward-delay">Transmission Delay (Store-And-Forward Delay)</h4>
-<ul>
-<li>The time that it takes for a packet's bits to be sent into the channel</li>
-<li>This happens because it takes time to put the bits of a packet on the channel before those bits are actually sent</li>
-<li>Entirely dependent on the size of the packet.</li>
-</ul>
-<p>$$
-    D_{T} = \frac{L}{R} \\
-    \text{$D_T$ is the transmission delay in seconds}\\
-    \text{$L$ is the number of bits, and} \\
-    \text{R is the rate of transmission (say in bits per second)}
-$$</p>
+<p><em>definition</em>: The <strong>transmission delay</strong> is the time that it takes for a packet's bits to be sent into the channel. It happens because it takes time to put the bits of a packet on the channel before those bits are actually sent and is very dependant on the packets size. The transmission delay can be expressed as,</p>
+<p>
+<script type="math/tex; mode=display">
+    d_{trans} = \frac{L}{R}
+</script>
+</p>
+<p>where $L$ is the number of bits and $R$ is the rate of transmission (often in bits per second).</p>
 <h4 id="end-to-end-delay">End-To-End Delay</h4>
-<ul>
-<li>The total ammount of time for a packet to reeach its destination is</li>
-</ul>
+<p>The total amount of time for a packet to reach its destination is</p>
 <p>
 <script type="math/tex; mode=display">
     d_\text{end to end} = d_\text{transmission} + d_\text{propagation} + d_\text{processing} + d_\text{queue}
