@@ -57,7 +57,7 @@
         }, 
         {
             "location": "/2016-01-07/", 
-            "text": "Lecture 2 - Notes\n\n\nJanuary 7, 2016\n\n\nOverview of Networks\n\n\nWhat is a network?\n\n\n\n\nEnd Systems, e.g., computers, phones, servers.\n\n\nCommunication Links, e.g., cell broadcasts, broadband\n\n\nIntermediate Systems, e.g., routers, switches\n\n\n\n\nTypes of Networks\n\n\n\n\nBroadcast\n\n\nCable TV\n\n\n\n\n\n\nSwitched\n\n\nCircuit Switching\n\n\nPublic Switched Telephone Network (PSTN)\n\n\n\n\n\n\nPacket Switching\n\n\nThe Internet\n\n\n\n\n\n\n\n\n\n\n\n\nPacket Switching\n\n\nPackets must arrive to the router before it is forwarded to its next destination. This is called \nstore and forward\n.\n\n\nExample\n\n\nYou have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.\n\n\n\n\n\n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}\n\n\n\n\n\nSo the total transmission time is 15 seconds. The end to end can also be shown as,\n\n\n\n\n\n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}\n\n\n\n\n\nthe queue delay is the least stable and is based on the packets in the queue.", 
+            "text": "Lecture 2 - Notes\n\n\nJanuary 7, 2016\n\n\nOverview of Networks\n\n\nWhat is a network?\n\n\n\n\nEnd Systems, e.g., computers, phones, servers.\n\n\nCommunication Links, e.g., cell broadcasts, broadband\n\n\nIntermediate Systems, e.g., routers, switches\n\n\n\n\nTypes of Networks\n\n\n\n\nBroadcast\n\n\nCable TV\n\n\n\n\n\n\nSwitched\n\n\nCircuit Switching\n\n\nPublic Switched Telephone Network (PSTN)\n\n\n\n\n\n\nPacket Switching\n\n\nThe Internet\n\n\n\n\n\n\n\n\n\n\n\n\nPacket Switching\n\n\n\n\nA method of transmitting data where the data is transformed into chunks called packets which are then shared across a newtork\n\n\nEach packet contains an address that directs the packet to its destination\n\n\nA channel is occupied during the transmission of the packet only, and upon completion of the transmission the channel is made available for the transfer of other traffic\n\n\nUsed to increase network efficiency by allowing data to be transmitted between multiple start and end points along the same connection in the newtork\n\n\n\n\nTypes of Delay\n\n\nPropagation Delay\n\n\n\n\nThe time that it takes for the packet to reach its destination\n\n\nThe time it takes for the head of the signal to travel from the sender to the receiver.\n\n\n\n\n\n\n\n    D_{Prop} = \\frac{d}{s} \\\\\\\\\n    \\text{d = distance between nodes}\n    \\text{s = speed of delivery}\n\n\n\n\n\nQueueing Delay\n\n\n\n\nThe time that a packet waits in a queue before being able to be processed.\n\n\nThe queue delay is the least stable and is based on the number of packets being sent at a particular time.\n\n\n\n\nProcessing Delay\n\n\n\n\nThe time it takes for a router to process the packet header\n\n\ni.e\n The time it takes to decide where the packet needs to go, to look for errors and to decrypt and encrypt the packet\n\n\n\n\nTransmission Delay (Store-And-Forward Delay)\n\n\n\n\nThe time that it takes for a packet's bits to be sent into the channel\n\n\nThis happens because it takes time to put the bits of a packet on the channel before those bits are actually sent\n\n\nEntirely dependent on the size of the packet.\n\n\n\n\n$$\n    D_{T} = \\frac{L}{R} \\\\\n    \\text{$D_T$ is the transmission delay in seconds}\\\\\n    \\text{$L$ is the number of bits, and} \\\\\n    \\text{R is the rate of transmission (say in bits per second)}\n$$\n\n\nEnd-To-End Delay\n\n\n\n\nThe total ammount of time for a packet to reeach its destination is\n\n\n\n\n\n\n\n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}\n\n\n\n\n\nExample\n\n\nYou have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.\n\n\n\n\n\n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}\n\n\n\n\n\nSo the total transmission time is 15 seconds", 
             "title": "2016 01 07"
         }, 
         {
@@ -82,12 +82,42 @@
         }, 
         {
             "location": "/2016-01-07/#packet-switching", 
-            "text": "Packets must arrive to the router before it is forwarded to its next destination. This is called  store and forward .", 
+            "text": "A method of transmitting data where the data is transformed into chunks called packets which are then shared across a newtork  Each packet contains an address that directs the packet to its destination  A channel is occupied during the transmission of the packet only, and upon completion of the transmission the channel is made available for the transfer of other traffic  Used to increase network efficiency by allowing data to be transmitted between multiple start and end points along the same connection in the newtork", 
             "title": "Packet Switching"
         }, 
         {
+            "location": "/2016-01-07/#types-of-delay", 
+            "text": "", 
+            "title": "Types of Delay"
+        }, 
+        {
+            "location": "/2016-01-07/#propagation-delay", 
+            "text": "The time that it takes for the packet to reach its destination  The time it takes for the head of the signal to travel from the sender to the receiver.    \n    D_{Prop} = \\frac{d}{s} \\\\\\\\\n    \\text{d = distance between nodes}\n    \\text{s = speed of delivery}", 
+            "title": "Propagation Delay"
+        }, 
+        {
+            "location": "/2016-01-07/#queueing-delay", 
+            "text": "The time that a packet waits in a queue before being able to be processed.  The queue delay is the least stable and is based on the number of packets being sent at a particular time.", 
+            "title": "Queueing Delay"
+        }, 
+        {
+            "location": "/2016-01-07/#processing-delay", 
+            "text": "The time it takes for a router to process the packet header  i.e  The time it takes to decide where the packet needs to go, to look for errors and to decrypt and encrypt the packet", 
+            "title": "Processing Delay"
+        }, 
+        {
+            "location": "/2016-01-07/#transmission-delay-store-and-forward-delay", 
+            "text": "The time that it takes for a packet's bits to be sent into the channel  This happens because it takes time to put the bits of a packet on the channel before those bits are actually sent  Entirely dependent on the size of the packet.   $$\n    D_{T} = \\frac{L}{R} \\\\\n    \\text{$D_T$ is the transmission delay in seconds}\\\\\n    \\text{$L$ is the number of bits, and} \\\\\n    \\text{R is the rate of transmission (say in bits per second)}\n$$", 
+            "title": "Transmission Delay (Store-And-Forward Delay)"
+        }, 
+        {
+            "location": "/2016-01-07/#end-to-end-delay", 
+            "text": "The total ammount of time for a packet to reeach its destination is    \n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}", 
+            "title": "End-To-End Delay"
+        }, 
+        {
             "location": "/2016-01-07/#example", 
-            "text": "You have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.   \n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}   So the total transmission time is 15 seconds. The end to end can also be shown as,   \n    d_\\text{end to end} = d_\\text{transmission} + d_\\text{propagation} + d_\\text{processing} + d_\\text{queue}   the queue delay is the least stable and is based on the packets in the queue.", 
+            "text": "You have a packet that is 7.5 Mbits which goes through 3 routers and each router processes at 1.5 Mbps.   \n    \\underset{\\text{routers}}3 \\cdot\n    \\frac\n    {\n    7.5 ~\\text{Megabits}\n    }\n    {\\left(\n    \\frac{1.5 ~\\text{Megabits}}{\\text{Second}}\n    \\right)}\n     = 15 ~\\text{seconds}   So the total transmission time is 15 seconds", 
             "title": "Example"
         }, 
         {
