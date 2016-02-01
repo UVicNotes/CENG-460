@@ -307,7 +307,7 @@
         }, 
         {
             "location": "/2016-01-25/", 
-            "text": "Lecture 7 - Notes\n\n\nJanuary 25, 2016\n  \n\n\nError Control - Continued\n\n\nHamming Code\n\n\nWikipedia\n\n\ndefinition\n: \nHamming codes\n can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.\n\n\nCRC\n\n\nCorrecting Error\n\n\nFor connections were error is low (like wired networks) it can be more efficient to use less parity bits and only detect error. Then we can ask the sender to resend the package.", 
+            "text": "Lecture 7 - Notes\n\n\nJanuary 25, 2016\n  \n\n\nError Control - Continued\n\n\nHamming Code\n\n\nWikipedia\n\n\ndefinition\n: \nHamming codes\n can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.\n\n\nCorrecting Error\n\n\nFor connections were error is low (like wired networks) it can be more efficient to use less parity bits and only detect error. Then we can ask the sender to resend the package.", 
             "title": "2016 01 25"
         }, 
         {
@@ -326,14 +326,19 @@
             "title": "Hamming Code"
         }, 
         {
-            "location": "/2016-01-25/#crc", 
-            "text": "", 
-            "title": "CRC"
-        }, 
-        {
             "location": "/2016-01-25/#correcting-error", 
             "text": "For connections were error is low (like wired networks) it can be more efficient to use less parity bits and only detect error. Then we can ask the sender to resend the package.", 
             "title": "Correcting Error"
+        }, 
+        {
+            "location": "/2016-02-01/", 
+            "text": "Lecture 8 - Notes\n\n\nFebruary 1, 2016\n  \n\n\nDidn't know what to write down...", 
+            "title": "2016 02 01"
+        }, 
+        {
+            "location": "/2016-02-01/#lecture-8-notes", 
+            "text": "February 1, 2016     Didn't know what to write down...", 
+            "title": "Lecture 8 - Notes"
         }
     ]
 }
