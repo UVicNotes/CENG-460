@@ -307,7 +307,7 @@
         }, 
         {
             "location": "/2016-01-25/", 
-            "text": "Lecture 7 - Notes\n\n\nJanuary 25, 2016\n  \n\n\nError Control - Continued\n\n\nHamming Code\n\n\nWikipedia\n\n\ndefinition\n: \nHamming codes\n can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.\n\n\nCorrecting Error\n\n\nFor connections were error is low (like wired networks) it can be more efficient to use less parity bits and only detect error. Then we can ask the sender to resend the package.", 
+            "text": "Lecture 7 - Notes\n\n\nJanuary 25, 2016\n  \n\n\nError Control - Continued\n\n\nHamming Code\n\n\nWikipedia\n\n\ndefinition\n: \nHamming codes\n can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.\n\n\nCyclic Redundancy Check (CRC)\n\n\nExternal Notes\n\n\ndefinition\n: The \nCyclic Redundancy Check (CRC)\n is a method of generating parity bits which uses the properties of polynomial division and base 2 integers to detect errors.\n\n\nCorrecting Error\n\n\nFor connections were error is low (like wired networks) it can be more efficient to use less parity bits and only detect error. Then we can ask the sender to resend the package.", 
             "title": "2016 01 25"
         }, 
         {
@@ -324,6 +324,11 @@
             "location": "/2016-01-25/#hamming-code", 
             "text": "Wikipedia  definition :  Hamming codes  can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.", 
             "title": "Hamming Code"
+        }, 
+        {
+            "location": "/2016-01-25/#cyclic-redundancy-check-crc", 
+            "text": "External Notes  definition : The  Cyclic Redundancy Check (CRC)  is a method of generating parity bits which uses the properties of polynomial division and base 2 integers to detect errors.", 
+            "title": "Cyclic Redundancy Check (CRC)"
         }, 
         {
             "location": "/2016-01-25/#correcting-error", 
